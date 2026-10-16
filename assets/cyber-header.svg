@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="360" viewBox="0 0 1200 360" role="img" aria-labelledby="title desc">
+  <title id="title">Shahd Elbary — DEVPLAY</title>
+  <desc id="desc">Animated cyber violet header with neon grid and glowing title</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#08030f"/>
+      <stop offset=".48" stop-color="#160824"/>
+      <stop offset="1" stop-color="#090312"/>
+    </linearGradient>
+    <linearGradient id="neon" x1="0" y1="0" x2="1" y2="0">
+      <stop stop-color="#8b5cf6"/>
+      <stop offset=".5" stop-color="#f472b6"/>
+      <stop offset="1" stop-color="#c084fc"/>
+    </linearGradient>
+    <radialGradient id="orb">
+      <stop stop-color="#ec4899" stop-opacity=".42"/>
+      <stop offset="1" stop-color="#ec4899" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse">
+      <path d="M48 0H0V48" fill="none" stroke="#a855f7" stroke-width="1" opacity=".14"/>
+    </pattern>
+    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <clipPath id="frame"><rect width="1200" height="360" rx="24"/></clipPath>
+  </defs>
+  <g clip-path="url(#frame)">
+    <rect width="1200" height="360" fill="url(#bg)"/>
+    <rect width="1200" height="360" fill="url(#grid)">
+      <animateTransform attributeName="transform" type="translate" from="0 0" to="48 48" dur="8s" repeatCount="indefinite"/>
+    </rect>
+    <circle cx="1080" cy="70" r="260" fill="url(#orb)">
+      <animate attributeName="r" values="230;285;230" dur="6s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values=".55;.9;.55" dur="6s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="110" cy="330" r="220" fill="url(#orb)" opacity=".5">
+      <animate attributeName="cx" values="80;145;80" dur="9s" repeatCount="indefinite"/>
+    </circle>
+    <path d="M0 298 C240 248 370 350 604 292 S968 250 1200 300" fill="none" stroke="url(#neon)" stroke-width="2" opacity=".52">
+      <animate attributeName="d" values="M0 298 C240 248 370 350 604 292 S968 250 1200 300;M0 292 C220 342 408 242 610 300 S970 344 1200 286;M0 298 C240 248 370 350 604 292 S968 250 1200 300" dur="8s" repeatCount="indefinite"/>
+    </path>
+    <g fill="#f5d0fe" font-family="monospace" font-size="14" opacity=".7">
+      <text x="50" y="58">DEVPLAY // SYSTEM ONLINE</text>
+      <text x="935" y="325">EGYPT • BUILD • SHIP</text>
+    </g>
+    <g text-anchor="middle" filter="url(#glow)">
+      <text x="600" y="165" fill="url(#neon)" font-family="Arial, sans-serif" font-size="72" font-weight="800" letter-spacing="5">SHAHD ELBARY</text>
+      <text x="600" y="213" fill="#eadcff" font-family="monospace" font-size="21" letter-spacing="4">FULL-STACK DEVELOPER</text>
+      <text x="600" y="252" fill="#f9a8d4" font-family="monospace" font-size="16" letter-spacing="7">FOUNDER @ DEVPLAY</text>
+    </g>
+    <rect x="28" y="28" width="1144" height="304" rx="18" fill="none" stroke="url(#neon)" stroke-width="2" opacity=".72">
+      <animate attributeName="opacity" values=".42;.9;.42" dur="4s" repeatCount="indefinite"/>
+    </rect>
+    <g fill="#f472b6">
+      <circle cx="54" cy="306" r="4"><animate attributeName="opacity" values="0;1;0" dur="1.8s" repeatCount="indefinite"/></circle>
+      <circle cx="1145" cy="54" r="4"><animate attributeName="opacity" values="1;0;1" dur="2.2s" repeatCount="indefinite"/></circle>
+    </g>
+  </g>
+</svg>
+
